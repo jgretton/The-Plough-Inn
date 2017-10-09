@@ -1,0 +1,11 @@
+.right-page{
+    width: calc(100% - #{$header-width});
+    height:100%;
+    position: relative;
+    left: $header-width;
+
+    @media(max-width: $breakpoint-md){
+        width:100%;
+        left:0;
+    }
+}

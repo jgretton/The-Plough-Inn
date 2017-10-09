@@ -1,0 +1,35 @@
+//config
+@import "config/variables";
+
+//global
+@import "global/normalise.scss";
+@import "global/mixins.scss";
+@import "global/type.scss";
+
+//components
+@import "components/icons";
+@import "components/nav";
+@import "components/mobile-nav";
+@import "components/panel";
+@import "components/button";
+@import "components/header-img";
+@import "components/form";
+@import "components/tab-list";
+
+
+
+//layouts
+@import "layouts/right-page.scss";
+@import "layouts/header.scss";
+@import "layouts/hero.scss";
+@import "layouts/about.scss";
+@import "layouts/menu.scss";
+@import "layouts/booking.scss";
+@import "layouts/events.scss";
+@import "layouts/contact.scss";
+
+//vendors
+
+body{
+    margin: 0;
+}

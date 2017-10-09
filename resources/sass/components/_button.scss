@@ -1,0 +1,28 @@
+.button{
+    @include fontSize($font-p);
+    height:50px !important;
+    width:200px;
+    border: 2px solid $color-main;
+    color:$color-main;
+    background: transparent;
+    border-radius: 0;
+    cursor: pointer;
+    display:block;
+    position: relative;
+    left: 0;
+    transition: $transition;
+    text-shadow:none;
+    
+    &:hover{
+        box-shadow: $box-shadow;
+        background:$color-main;
+        color: white;
+        text-shadow:none;
+    }
+
+    &:active, &:focus{
+        background-color: $color-main;
+        color:$color-white;
+
+    }
+}

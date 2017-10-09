@@ -1,0 +1,91 @@
+.header{
+    width: $header-width;
+    height:100%;
+    padding-top: 20px;
+    position: fixed;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    background-color:$color-white;    
+    border-right: 1px solid $color-gray-light;
+    box-shadow: $box-shadow;
+    transition: $transition;
+    z-index: 999;
+
+    @media(max-width: $breakpoint-md){
+        width:100%;
+        height: 300px;
+        display:fixed;
+        flex-direction: row;
+        transform: translateY(-100%);
+    }
+
+    @media (max-width:$breakpoint-sm){
+        height:100%;
+        flex-direction: column;
+    }
+}
+
+.header__logo{
+    height: 200px;
+    width:   80%;
+    display: block;
+    @include push--auto;
+    
+    @media(max-width: $breakpoint-md){
+        display:none;
+    }
+}
+
+.header__contact{
+    @include flexbox;;
+    flex-direction: column;
+    height:auto;
+    width:100%;
+    margin-top:50px;
+    margin-left:15px;
+
+    @media(max-width: $breakpoint-md){
+        height:100%;
+        width:50%;
+        margin-top: 40px;
+        order:1;
+    }
+    @media (max-width:$breakpoint-sm){
+        height:100%;
+        order:2;
+        margin-top: -20px;
+    }
+    
+}
+.contact{
+    @include flexbox;;
+    flex-direction: row;
+    justify-content: flex-start;    
+    height: auto;
+    width:80%;
+    margin: 10px 0;
+    @include push--auto;
+    @media(max-width: $breakpoint-md){
+        width:100%;
+    }
+}
+.contact__icon{
+    height:100%;
+    width:20px;
+}
+.contact__info{
+    flex:1;
+    height:100%;
+    line-height:50px;
+    padding-left: 20px;
+}
+
+.header__copyright{
+
+    margin-bottom: 25px;
+    @include push--auto;
+    @media(max-width: $breakpoint-md){
+        display:none;
+    }
+}
